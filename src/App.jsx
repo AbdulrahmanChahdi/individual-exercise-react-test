@@ -1,10 +1,11 @@
 import './App.css';
+import DisplayCards from './components/Card/DisplayCards';
 
 function App() {
     return (
         <div className="app">
-            <h1>Exercice React</h1>
-            <p>Modifie ce composant pour commencer l'exercice.</p>
+            <h1>Catalogue de Voitures</h1>
+            <DisplayCards />
         </div>
     );
 }
