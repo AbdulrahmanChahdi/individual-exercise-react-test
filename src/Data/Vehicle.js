@@ -28,6 +28,39 @@ const vehicles = [
         modele:"Yaris",
         annee:2022,
         prix:15900
+	},
+	{
+        marque:"Porsche",
+        modele:"Magnum",
+        annee:2022,
+        prix:34000
+    },
+    {
+        marque:"Buggati",
+        modele:"Chiron",
+        annee:1989,
+        prix:23000000
+	},
+    {
+        marque:"Lamborghini",
+        modele:"Countach",
+        annee:1989,
+        prix:800000
 	}
 ];
+
+export function sortCar(carList, ascending) {
+
+        // trie la liste des voitures en fonction du prix
+    return [...carList].sort((a, b) => {
+        if (ascending) {
+        // compare les prix des voitures pour trier en ordre croissant
+            return a.prix - b.prix;
+        } else {
+        // compare les prix des voitures pour trier en ordre décroissant
+            return b.prix - a.prix;
+        }
+    });
+}
+
 export default vehicles;
