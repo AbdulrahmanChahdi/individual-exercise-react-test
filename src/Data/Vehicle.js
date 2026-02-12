@@ -36,7 +36,7 @@ const vehicles = [
         prix:34000
     },
     {
-        marque:"Buggati",
+        marque:"Bugatti",
         modele:"Chiron",
         annee:1989,
         prix:23000000
